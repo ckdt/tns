@@ -380,6 +380,7 @@ ul.counter li {
 }
 .footer-block ul {
   text-align: center;
+  margin-right:40px;
 }
 .footer-block ul li {
   display: inline;
