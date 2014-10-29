@@ -5,7 +5,7 @@ body{
 }
 
 h2{
-    font-family: RobotoCondensed-Bold;
+    font-family:'Roboto Condensed', sans-serif;
     font-size: 24px;
     line-height: 32px;
     letter-spacing: 1px;
@@ -13,15 +13,15 @@ h2{
 }
 
 .btn-success{
-  background:#56A258;
-  border-color:#56A258;
-  font-family: Roboto-Regular;
+  background:#49af48;
+  border-color:#49af48;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   color: #FDF6F6;
   font-weight:300;
 }
 .navbar{
-    border-top: 5px solid #56A258;
+    border-top: 5px solid #49af48;
     min-height: 80px;
     background: #fff;
 }
@@ -35,7 +35,7 @@ h2{
 }
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus{
     background:#FFF;
-    color:#56A258;
+    color:#49af48;
 }
 .container-fluid {
   max-width: 1440px;
@@ -58,8 +58,8 @@ h2{
 }
 .step {
   padding: 10px 20px;
-  min-height: 150px;
-  color: #56a258;
+  min-height: 220px;
+  color: #49af48;
   /*@media screen and (max-width: 767px){};*/
 }
 .step p {
@@ -71,7 +71,7 @@ h2{
 .stepnumber {
   height: 50px;
   width: 50px;
-  border: 3px solid #56a258;
+  border: 3px solid #49af48;
   margin: 15px auto;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -83,7 +83,7 @@ h2{
   margin: 0;
   text-align: center;
   font-weight: 500;
-  color: #56a258;
+  color: #49af48;
   font-family: 'Roboto', sans-serif;
   font-size: 32px;
 }
@@ -144,7 +144,7 @@ ul.landelijk img {
 .voor-wie-header h2{
   padding:35px 0;
   color:#FFF;
-  font-family: RobotoCondensed-Bold;
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 24px;
   letter-spacing: 1px;
 /* VOOR WIE WERKT HET?: */
@@ -169,7 +169,7 @@ ul.landelijk img {
   bottom: 550px;
 }
 .doel-titel h3{
-  font-family: Roboto-Regular;
+  font-family: 'Roboto', sans-serif;
   font-size: 28px;
   color: #FFFFFF;
 }
@@ -187,7 +187,7 @@ ul.landelijk img {
   background: #f7f7f7;
 }
 .regio{
-  font-family: RobotoCondensed-Bold;
+  font-family: 'Roboto Condensed', sans-serif;
   font-size: 20px;
   color: #FFFFFF;
   letter-spacing: 1px;
@@ -226,8 +226,8 @@ ul.landelijk img {
 }
 .over-header {
   height: 700px;
-  background:url('../img/tankstation.jpg') #CCC;
-  border-bottom: 4px solid #56a258;
+  background:url('../img/tankstation.jpg') #CCC no-repeat;
+  border-bottom: 4px solid #49af48;
 }
 .phone {
   position: absolute;
@@ -256,12 +256,12 @@ ul.landelijk img {
   padding-bottom: 50px;
 }
 .container.over h3{
-  font-family: Roboto-Medium;
+  font-family: Roboto;
   font-size: 24px;
   color: #000206;
 }
 .container.over p{
-  font-family: Roboto-Regular;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   color: #2C2C2C;
 }
@@ -288,7 +288,7 @@ ul.eigenschap li i{
   margin-right:20px;
 }
 .container-fluid.buzz {
-  background: #56a258;
+  background: #49af48;
 }
 .container.buzz {
   margin: 0 auto 100px;
@@ -302,13 +302,13 @@ ul.eigenschap li i{
   margin-bottom: 30px;
 }
 .news h3{
-  color:#56A258;
-  font-family: Roboto-Medium;
+  color:#49af48;
+  font-family: Roboto;
   font-size: 22px;
   margin:0 0 20px;
 }
 .news p{
-  font-family: Roboto-Regular;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   color: #2C2C2C;
 }
@@ -336,10 +336,10 @@ ul.eigenschap li i{
   background: #D8D8D8;
 }
 .field {
-  padding: 30px 0;
+  padding: 30px;
 }
 .aanmeld{
-  font-family: Roboto-Regular;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   color: rgba(0,0,0,0.80);
 }
@@ -385,10 +385,29 @@ ul.counter li {
 .footer-block ul li {
   display: inline;
 }
+
+.container-fluid.tankheader img{
+  width:1140px;
+}
 /* MEDIA QUERIES */
+
+/* MEDIUM SCREEN WIDTH DESKTOP 1439PX
+@media only screen and (max-width : 1439px) {
+  .container-fluid.slider{
+    width:100%;
+    height:100%
+  }
+  .slider{
+    width:100%;
+    height:380px;
+  }
+}*/
 
 /* tablet */
 @media only screen and (max-width : 768px) {
+  .container-fluid.slider{
+    height:290px;
+  }
   .step{
     min-height:220px;
   }
@@ -419,5 +438,229 @@ ul.counter li {
   }
   .field{
     padding:30px;
+  }
+}
+
+/* TABLET IPAD LANDSCAPE*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px)
+and (orientation : landscape) {
+  .container-fluid.slider{
+    width:1024px;
+  }
+  .slider{
+    width:100%;
+    height:380px;
+  }
+  .deelnemer{
+    padding-bottom:150px;
+  }
+  .screenshot{
+    margin-bottom:190px;
+  }
+  .aanmeld{
+    padding-left:40px;
+  }
+  .doel-titel h3{
+    font-size:1.5em;
+    text-align:center;
+  }
+  .doel-titel{
+    bottom:620px;
+  }
+  .counter{
+    text-align:center;
+  }
+}
+
+/* SMARTPHONE */
+@media screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) {
+  .container.stappen{
+    padding-top:30px;
+  }
+  .container-fluid.slider{
+    display:none;
+  }
+  .step{
+    margin-bottom:20px;
+    min-height:120px;
+  }
+  .land{
+    bottom:470px;
+  }
+  .regio{
+    left:115px;
+  }
+  .row.doel{
+    min-height:1100px;
+  }
+  .lokaal{
+    bottom:0px;
+    width:100%;
+  }
+  .box.doelen{
+    padding-right:40px;
+    text-align:center;
+  }
+  ul.landelijk li{
+    margin:0 auto;
+    margin-bottom:30px
+  }
+  .mogelijkheden{
+    position:relative;
+    bottom:0;
+  }
+  .deelnemer img{
+    float:none;
+    margin:0 auto;
+    display:block;
+  }
+  .container.deelnemers{
+    margin-top:80px;
+  }
+  .deelnemer h4{
+    text-align:center;
+    margin:20px 0;
+  }
+  .deelnemer button{
+    display:block;
+    margin:0 auto;
+  }
+  .container.deelnemers p{
+    text-align:center;
+    width:100%;
+  }
+  .phone{
+    width:260px;
+    bottom:-300px;
+  }
+  .form-control{
+    width:100%;
+    margin:20px 0;
+  }
+  .footer-block{
+    min-width:0px;
+  }
+  ul.counter li{
+    font-size:1.8em;
+    margin-right:1px;
+    padding:3px 5px;
+  }
+  .counter{
+    padding:0;
+    text-align:center;
+  }
+  .field.counter{
+    padding:30px 0;
+  }
+  .over-header{
+    background-size:400px;
+  }
+  .screenshot{
+    margin-bottom:250px;
+  }
+  .over-header{
+    height:0px;
+  }
+  .navbar-header{
+    min-height:80px;
+  }
+  .pull-right{
+    float:none !important;
+  }
+}
+
+@media screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
+  .container.stappen{
+    padding-top:30px;
+  }
+  .container-fluid.slider{
+    display:none;
+  }
+  .step{
+    margin-bottom:20px;
+    min-height:120px;
+  }
+  .land{
+    bottom:470px;
+  }
+  .regio{
+    left:115px;
+  }
+  .row.doel{
+    min-height:1100px;
+  }
+  .lokaal{
+    bottom:0px;
+    width:100%;
+  }
+  .box.doelen{
+    padding-right:40px;
+    text-align:center;
+  }
+  ul.landelijk li{
+    margin:0 auto;
+    margin-bottom:30px
+  }
+  .mogelijkheden{
+    position:relative;
+    bottom:0;
+  }
+  .deelnemer img{
+    float:none;
+    margin:0 auto;
+    display:block;
+  }
+  .container.deelnemers{
+    margin-top:80px;
+  }
+  .deelnemer h4{
+    text-align:center;
+    margin:20px 0;
+  }
+  .deelnemer button{
+    display:block;
+    margin:0 auto;
+  }
+  .container.deelnemers p{
+    text-align:center;
+    width:100%;
+  }
+  .phone{
+    width:260px;
+    bottom:-300px;
+  }
+  .form-control{
+    width:100%;
+    margin:20px 0;
+  }
+  .footer-block{
+    min-width:0px;
+  }
+  ul.counter li{
+    font-size:1.8em;
+    margin-right:1px;
+    padding:3px 5px;
+  }
+  .counter{
+    padding:0;
+    text-align:center;
+  }
+  .field.counter{
+    padding:30px 0;
+  }
+  .over-header{
+    background-size:400px;
+  }
+  .screenshot{
+    margin-bottom:250px;
+  }
+  .over-header{
+    height:0px;
+  }
+  .navbar-header{
+    min-height:80px;
+  }
+  .pull-right{
+    float:none !important;
   }
 }
